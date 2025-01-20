@@ -12,27 +12,47 @@ header {
     align-items: center;
     justify-content: center;
 }
-nav {
-	grid-area: navi;
-}
+/*first layer nav*/
 nav ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 42.5% 5% 5% 5% 42.5%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "empty1 home listen shop";
 	margin: 0;
 	padding: 0;
 	padding-inline-start: 0;
 	list-style-type: none;
 	border: 0;
+    font-size: 125%;
 }
 nav ul li{
 	float: left;
 	text-align: center;
-    width: 5%;
-    font-size: 145%;
 }
-nav ul ul {
-    position: absolute;
+#home {
+    grid-area: home;
 }
-nav ul ul li {
+#listen {
+    grid-area: listen;
 }
+#shop {
+    grid-area: shop;
+}
+/*second layer nav*/
+nav ul li ul {
+    visibility: hidden;
+    display: block;
+    font-size: 100%;
+}
+nav ul li ul li {
+    float: none;
+}
+nav ul li:hover ul {
+    visibility: visible;
+}
+/*nav links*/
 nav a {
     display: block;
 }
