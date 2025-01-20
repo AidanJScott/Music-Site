@@ -17,7 +17,7 @@ nav ul{
     width: 100%;
     display: grid;
     grid-template-columns: 42.5% 5% 5% 5% 42.5%;
-    grid-template-rows: 100%;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "empty1 home listen shop";
 	margin: 0;
@@ -63,6 +63,28 @@ nav a:link, nav li a:visited{
 nav a:hover, nav li a:focus{
 	text-decoration: underline;
 }
+
 main {
     clear: both;
+}
+main div h2 {
+    margin-top: 2rem;
+}
+.images img {
+    width: 30%;
+    height: auto;
+    padding-left: 2.5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.new_releases{
+    text-align: center;
+}
+.new_releases table {
+    margin: 0 auto;
+    border-spacing: 2rem;
+    font-size: 125%;
+}
+.shop_items {
+    text-align: center;
 }
