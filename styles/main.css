@@ -1,0 +1,48 @@
+/*Aidan Scott*/
+
+html {
+    background-color: black;
+    color: white;
+}
+body {
+    font-family: Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+	grid-area: navi;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	padding-inline-start: 0;
+	list-style-type: none;
+	border: 0;
+}
+nav ul li{
+	float: left;
+	text-align: center;
+    width: 5%;
+    font-size: 145%;
+}
+nav ul ul {
+    position: absolute;
+}
+nav ul ul li {
+}
+nav a {
+    display: block;
+}
+nav a:link, nav li a:visited{
+	text-decoration: none;
+	color: white;
+}
+nav a:hover, nav li a:focus{
+	text-decoration: underline;
+}
+main {
+    clear: both;
+}
