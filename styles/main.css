@@ -70,6 +70,9 @@ a:link, a:visited{
 a:hover, a:focus{
 	text-decoration: underline;
 }
+footer {
+    text-align: center;
+}
 footer table {
     font-size: 125%;
     margin: 1rem auto;
