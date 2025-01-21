@@ -63,9 +63,6 @@ a:link, a:visited{
 a:hover, a:focus{
 	text-decoration: underline;
 }
-/*main page specific*/
-
-/*end of main page specific*/
 footer table {
     margin: 1rem auto;
     border-spacing: 0rem 0;
