@@ -12,8 +12,11 @@ header {
     justify-content: center;
     margin: 2rem auto;
 }
+header a {
+    text-align: center;
+}
 header img {
-    width: 7%;
+    width: 13%;
     height: auto;
 }
 /*first layer nav*/
@@ -68,6 +71,7 @@ a:hover, a:focus{
 	text-decoration: underline;
 }
 footer table {
+    font-size: 125%;
     margin: 1rem auto;
     border-spacing: 0rem 0;
 }
