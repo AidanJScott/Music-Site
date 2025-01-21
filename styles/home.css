@@ -14,13 +14,6 @@ main div h2 {
     text-align: center;
     font-size: 125%;
 }
-.gallery img {
-    width: 30%;
-    height: auto;
-    padding-left: 2.5%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 .new_releases table {
     margin: 0 auto;
     border-spacing: 2rem;
@@ -38,4 +31,11 @@ main div h2 {
 td img {
     width: 40%;
     height: auto;
+}
+.gallery img {
+    width: 30%;
+    height: auto;
+    padding-left: 2.5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
