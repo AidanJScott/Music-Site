@@ -1,0 +1,31 @@
+/*Aidan Scott*/
+main {
+    clear: both;
+}
+main div h2 {
+    margin-top: 2rem;
+    text-align: center;
+}
+.gallery img {
+    width: 30%;
+    height: auto;
+    padding-left: 2.5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.new_releases table {
+    margin: 0 auto;
+    border-spacing: 2rem;
+    font-size: 125%;
+}
+td {
+    width: 50%;
+    text-align: right;
+}
+.second_column{
+    text-align: left;
+}
+td img {
+    width: 40%;
+    height: auto;
+}

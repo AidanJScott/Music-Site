@@ -1,5 +1,4 @@
 /*Aidan Scott*/
-
 html {
     background-color: black;
     color: white;
@@ -11,6 +10,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2rem auto;
 }
 /*first layer nav*/
 nav ul{
@@ -53,38 +53,35 @@ nav ul li:hover ul {
     visibility: visible;
 }
 /*nav links*/
-nav a {
+a {
     display: block;
 }
-nav a:link, nav li a:visited{
+a:link, a:visited{
 	text-decoration: none;
 	color: white;
 }
-nav a:hover, nav li a:focus{
+a:hover, a:focus{
 	text-decoration: underline;
 }
+/*main page specific*/
 
-main {
-    clear: both;
+/*end of main page specific*/
+footer table {
+    margin: 1rem auto;
+    border-spacing: 0rem 0;
 }
-main div h2 {
-    margin-top: 2rem;
-}
-.images img {
-    width: 30%;
-    height: auto;
-    padding-left: 2.5%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.new_releases{
+footer table td {
+    width: auto;
     text-align: center;
 }
-.new_releases table {
-    margin: 0 auto;
-    border-spacing: 2rem;
-    font-size: 125%;
+/*Hide all rows except middle column, hover reveals row*/
+footer tr {
+    visibility: hidden;
 }
-.shop_items {
-    text-align: center;
+.footer_hover{
+    visibility: visible;
 }
+footer tr:hover {
+    visibility: visible;
+}
+
