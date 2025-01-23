@@ -4,4 +4,5 @@ main {
 iframe {
     width: 75%;
     margin: 2rem 5%;
+    border: 0;
 }
