@@ -10,9 +10,13 @@ main div h2 {
     width: 90%;
     height: auto;
 }
+.shop_items img:hover {
+    transform: scale(1.125);
+}
 .shop_items table {
     text-align: center;
     font-size: 125%;
+    border-spacing: 1rem;
 }
 .new_releases table {
     margin: 0 auto;

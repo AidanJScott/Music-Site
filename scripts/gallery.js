@@ -2,7 +2,7 @@
 let images = document.querySelectorAll(".gallery img");
 images.forEach(image => {
     let imageSource = image.getAttribute("src");
-    let altImageSource = image.getAttribute("altSrc");
+    let altImageSource = image.getAttribute("id");
     image.addEventListener("mouseover", event => {
         image.src = altImageSource
     });

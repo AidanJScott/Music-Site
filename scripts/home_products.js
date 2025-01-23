@@ -2,7 +2,7 @@
 let productImages = document.querySelectorAll(".shop_items img");
 productImages.forEach(image =>{
     let imageSource = image.getAttribute("src");
-    let hoverSource = image.getAttribute("hoverSrc");
+    let hoverSource = image.getAttribute("id");
 
     image.addEventListener("mouseover", event =>{
         image.setAttribute("src", hoverSource);
