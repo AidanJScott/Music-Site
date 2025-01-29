@@ -25,20 +25,20 @@ hr {
 }
 .new_releases table {
     margin: 0 auto;
+    margin-right: 10%;
     border-spacing: 2rem;
     font-size: 125%;
 }
-.new_releases table tbody tr td {
-    width: 50%;
-}
 .first_column {
     text-align: right;
+    width: 35%;
 }
 .second_column {
     text-align: left;
+    width: 65%;
 }
 td img {
-    width: 40%;
+    width: 70%;
     height: auto;
 }
 .gallery img {
