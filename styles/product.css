@@ -1,0 +1,26 @@
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75% 25%;
+    grid-template-areas:
+    "imag info"
+    "alts info";
+}
+.main_img {
+    grid-area: imag;
+    text-align: center;
+}
+.main_img img {
+    width: 60%;
+}
+.alt_images {
+    grid-area: alts;
+    text-align: center;
+}
+.alt_images img {
+    width: 10%;
+    padding: 0 1%;
+}
+.product_info {
+    grid-area: info;
+}
