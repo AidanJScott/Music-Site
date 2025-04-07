@@ -23,10 +23,10 @@ header img {
 nav ul{
     width: 100%;
     display: grid;
-    grid-template-columns: 42.5% 5% 5% 5% 42.5%;
+    grid-template-columns: 40% 5% 5% 5% 5% 40%;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "empty1 home listen shop";
+    "empty1 home listen shop join empty2";
 	margin: 0;
 	padding: 0;
 	padding-inline-start: 0;
@@ -46,6 +46,9 @@ nav ul li{
 }
 #shop {
     grid-area: shop;
+}
+#join {
+    grid-area: join;
 }
 /*second layer nav*/
 nav ul li ul {
@@ -69,6 +72,12 @@ a:link, a:visited{
 }
 a:hover, a:focus{
 	text-decoration: underline;
+}
+#current {
+    color: gray;
+}
+.warning {
+    color: red;
 }
 footer {
     text-align: center;

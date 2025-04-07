@@ -1,41 +1,8 @@
-<!DOCTYPE html>
-<!--Aidan Scott-->
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Music - Ajei">
-		<meta name="keywords" content="Music,Guitar,Song,Album,Solo,Artist">
-		<title>AJEI - MUSIC</title>
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/home.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
-        <style>
-            body {
-                font-family: Sofia Sans Extra Condensed;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img src="media/images/ajei_logo_dark.png" alt="AJEI Logo"></a>
-        </header>
-        <nav>
-            <ul>
-                <li id="home"><a href="index.html" id="current">HOME</a></li>
-                <li id="listen">LISTEN ˅
-                    <ul>
-                        <li><a href="ajscott.html">AJEI</a></li>
-                        <li><a href="infinxty.html">INFINXTY</a></li>
-                    </ul>
-                </li>
-                <li id="shop"><a href="shop.html">SHOP</a></li>
-                <li id="join"><a href="join.html">JOIN</a></li>
-            </ul>
-        </nav>
-        <!--End of cross-page content - See below-->
-        <main>
+<?php 
+// Aidan Scott
+require "includes/header.php";
+?>
+<main>
             <section class="gallery">
                 <h2>WILMINGTON INDIE-ROCK & METAL ARTIST</h2>
                 <img src="media/images/slobberhouse_img_1.jpg" alt="INFINXTY show at Slobberhouse" id="media/images/slobberhouse_img_1_caption.png">
@@ -81,32 +48,4 @@
             </div>
             <hr>
         </main>
-        <!--Start of cross-page content-->
-        <footer>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><a href="https://www.instagram.com/a_jei__/">AJEI</a></td>
-                        <td class="footer_hover" id="&lt;&nbsp;INSTAGRAM&nbsp;&gt;">&nbsp;&nbsp;&nbsp;INSTAGRAM&nbsp;&nbsp;&nbsp;</td>
-                        <td><a href="https://www.instagram.com/_infinxtyx/">INFINXTY</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://open.spotify.com/artist/1oefJV4FYNwBcp3nNflbg1?si=EIIJVJM4Qlugt1mMwlaLsg">AJEI</a></td>
-                        <td class="footer_hover" id="&lt;&nbsp;SPOTIFY&nbsp;&gt;">&nbsp;&nbsp;SPOTIFY&nbsp;&nbsp;</td>
-                        <td><a href="https://open.spotify.com/artist/639VVMpJmUsxCiO459ZGLJ?si=cNrqSxUiQva0vFFeKEiYUg">INFINXTY</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://music.apple.com/us/artist/aj-scott/1729042132">AJEI</a></td>
-                        <td class="footer_hover" id="&lt;&nbsp;APPLE&nbsp;MUSIC&nbsp;&gt;">&nbsp;&nbsp;APPLE MUSIC&nbsp;&nbsp;</td>
-                        <td><a href="https://music.apple.com/us/artist/infinxty/1577228467">INFINXTY</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>&copy; Aidan Scott 2025 - ajei.business.mail@gmail.com</p>
-        </footer>
-        <script src="scripts/home_products.js"></script>
-        <script src="scripts/footer.js"></script>
-        <script src="scripts/gallery.js"></script>
-    </body>
-</html>
-    <!--End of cross-page content-->
+    <?php include "includes/footer.php"; ?>
