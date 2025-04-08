@@ -7,7 +7,7 @@
 		$message2 = "Please log in <a href=\"login.php\">here</a>";
 	} else { 
 		$message = 'You have reached this page in error';
-		$message2 = 'Please use the menu at the right';	
+		$message2 = 'Please use the navigation bar at the top';	
 	}
 	//The require header is deferred until session variables are set so that the menu can display correctly
 	require 'includes/header.php';
