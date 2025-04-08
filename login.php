@@ -1,7 +1,7 @@
 <?php //This is the login page for registered users
 require_once '../secure_conn.php';
 require 'includes/header.php';
-if (isset($_POST['send']) && $_POST['send']=="Login" ) {
+if (isset($_POST['send']) && $_POST['send']=="SUBMIT" ) {
 	$errors = array();
 	
 	$valid_email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);	//returns a string or null if empty or false if not valid	
