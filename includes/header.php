@@ -1,4 +1,7 @@
-<?php include "includes/title.php";?>
+<?php 
+include "includes/title.php";
+session_start();
+?>
 <!DOCTYPE html>
 <!--Aidan Scott-->
 <html lang="en">

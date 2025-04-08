@@ -88,9 +88,15 @@ footer table {
     border-spacing: 0rem 0;
 }
 footer table td {
-    width: auto;
+    width: 33%;
     text-align: center;
     padding: 0;
+}
+.footer_left {
+    text-align: right;
+}
+.footer_right {
+    text-align: left;
 }
 /*Hide all rows except middle column, hover reveals row*/
 footer tr {

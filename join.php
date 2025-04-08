@@ -62,7 +62,7 @@ require "includes/header.php";
                 else 
                     $_SESSION['name'] = $name;
                     $_SESSION['email'] = $email;
-                    header('Location: acct_created.php');
+                    header('Location: accountCreated.php');
                 include 'includes/footer.php'; 
                 exit;      
             }
