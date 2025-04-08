@@ -7,25 +7,25 @@ require "includes/header.php";
     <?php
     if (isset($_GET['submit'])&& $_GET['submit'] == "SUBSCRIBE" ) {
         if (!empty($_GET['name'])){
-            $name = $_GET['name'];
+            $name = trim($_GET['name']);
         }
         else {
             $missing['name'] = "A NAME IS REQUIRED: ";
         }
         if (!empty($_GET['email'])){
-            $email = $_GET['email'];
+            $email = trim($_GET['email']);
         }
         else {
             $missing['email'] = "AN EMAIL IS REQUIRED: ";
         }
         if (!empty($_GET['password'])){
-            $password = $_GET['password'];
+            $password = trim($_GET['password']);
         }
         else {
             $missing['password'] = "A PASSWORD IS REQUIRED: ";
         }
         if (!empty($_GET['password_check'])){
-            $password_check = $_GET['password_check'];
+            $password_check = trim($_GET['password_check']);
         }
         else {
             $missing['password_check'] = "A PASSWORD IS REQUIRED: ";
