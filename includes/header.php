@@ -10,7 +10,7 @@ session_start();
 		<meta name="description" content="Music - Ajei">
 		<meta name="keywords" content="Music,Guitar,Song,Album,Solo,Artist">
 		<title>AJEI<?php if(isset($title)) {echo " &mdash; $title";} ?></title>
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/mainStyles.css">
         <link rel="stylesheet" href="styles/home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
