@@ -15,8 +15,8 @@
 	//The require header is deferred until session variables are set so that the menu can display correctly
 	require 'includes/header.php';
 	// Print the message:
-	echo '<h2>'.$message.'</h2>';
-	echo '<h3>'.$message2.'</h3>';
+	echo '<h2 style="text-align:center">'.$message.'</h2>';
+	echo '<h3 style="text-align:center">'.$message2.'</h3>';
 	// Include the footer and quit the script:
 	include ('includes/footer.php'); 	
 ?>

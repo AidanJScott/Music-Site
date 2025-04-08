@@ -10,8 +10,8 @@
         </li>
         <li id="shop"><a href="shop.php" <?php if ($currentPage == 'shop.php') {echo 'id="current"'; } ?>>SHOP</a></li>
         <?php
-		if(isset($_SESSION['first_name']) AND isset($_SESSION['email'])){
-			echo "<li><a href=\"loggedOut.php\""; 
+		if(isset($_SESSION['name']) AND isset($_SESSION['email'])){
+			echo "<li id=\"join\"><a href=\"loggedOut.php\""; 
 			if ($currentPage == 'loggedOut.php') {echo 'id="here"'; }
 			echo ">LOG OUT</a></li>";
 		}
