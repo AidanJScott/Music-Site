@@ -33,10 +33,42 @@ require "includes/header.php";
         if ($password != $password_check){
             $missing['password_check'] = "PASSWORDS MUST MATCH: ";
         }
-        if (empty($missing)){
-            echo "<h2>THANK YOU FOR SUBSCRIBING</h2>";
-            include "includes/footer.php";
-            exit;
+        
+        try{
+            // connect to database
+            require_once '../../pdo_connect.php';
+
+            //Check to see if email address already exists
+            $sql = "SELECT * FROM music_site_users WHERE email = ?";
+            $stmt = $dbc->prepare($sql);
+            $stmt->bindParam(1, $email);
+            $stmt->execute();
+            $numRows = $stmt->rowCount();
+            if ($numRows >= 1)
+                $missing['exists'] = "That email address is already registered.";
+            
+            // insert into database if no errors are found
+            if (empty($missing)){
+                $sql2 = "INSERT INTO music_site_users (name, email, password) VALUES (?, ?, ?)";
+                $stmt2 = $dbc->prepare($sql2);
+                $pw_hash= password_hash($password, PASSWORD_DEFAULT);
+                $stmt2->bindParam(1, $name);
+                $stmt2->bindParam(2, $email);
+                $stmt2->bindParam(3, $pw_hash);
+                $stmt2->execute();
+                $numRows = $stmt2->rowCount();
+                if ($numRows != 1)
+                    echo "<h2>We are unable to process your request at  this  time. Please try again later.</h2>";
+                else 
+                    $_SESSION['name'] = $name;
+                    $_SESSION['email'] = $email;
+                    header('Location: acct_created.php');
+                include 'includes/footer.php'; 
+                exit;      
+            }
+        }
+        catch (PDOException $e){
+            echo $e->getMessage();	
         }
     }
     ?>
@@ -60,6 +92,8 @@ require "includes/header.php";
         <?php 
             if (isset($missing['email'])) 
                 echo '<span class="warning">'.$missing['email'].'</span><br>'; 
+            if (isset($missing['exists']))
+                echo '<span class="warning">'.$missing['exists'].'</span><br>'; 
         ?>
             <label>EMAIL: 
             <input type="email" name="email" id="Email"
