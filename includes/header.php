@@ -23,7 +23,7 @@ session_start();
     </head>
     <body>
         <header>
-            <a href="index.html"><img src="media/images/ajei_logo_dark.png" alt="AJEI Logo"></a>
+            <a href="index.php"><img src="media/images/ajei_logo_dark.png" alt="AJEI Logo"></a>
         </header>
     <?php require "includes/menu.php";?>
         
