@@ -44,9 +44,9 @@
 				<td><?= $title; ?></td>
 				<td><img src = "media/images/<?= $row['filename'];?>"></td>
 				<td>
-					<form action="product_details.php" method="get">
-						<input type="hidden" name="image_id" value="<?= $row['image_id'];?>">
-						<input type="submit" name="submit" value="View Details">
+					<form action="item_details.php" method="get">
+						<input type="hidden" name="image_id" value="<?= $row['id'];?>">
+						<input type="submit" name="submit" value="VIEW DETAILS">
 					</form>
 				</td>
 			</tr>
