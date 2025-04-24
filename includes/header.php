@@ -11,7 +11,13 @@ session_start();
 		<meta name="keywords" content="Music,Guitar,Song,Album,Solo,Artist">
 		<title>AJEI<?php if(isset($title)) {echo " &mdash; $title";} ?></title>
         <link rel="stylesheet" href="styles/mainStyles.css">
-        <link rel="stylesheet" href="styles/home.css">
+        <?php
+        echo "<link rel=\"stylesheet\" href=\"styles/";
+        if ($title == "HOME"){echo "home";}
+        elseif ($title == "INFINXTY" or $title == "AJEI"){echo "listen";}
+        elseif($title == "SHOP"){echo "shop";}
+        echo ".css\">";
+        ?>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
